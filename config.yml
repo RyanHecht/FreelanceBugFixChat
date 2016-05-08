@@ -1,0 +1,43 @@
+﻿# Plugin DCommandsPRO Version 1.0
+# Authors:
+# Matt ( @Daxxiee )
+# DevOG ( @Devin_54321 )
+# Links:
+# Official Wiki      | bitly.com/dcwiki
+# Spigot Plugin      | bitly.com/dcplugin
+# Support            | bitly.com/dcthread
+ServerName: '&6My Server'
+Prefix: '&c[DCommands]'
+ServerIP: play.testserver.net
+MOTD: '&6Server TestServer.net using DCommands!'
+Website: forum.testserver.net
+Permissions-Plugin: PEX
+commands:
+# Here is an example broadcast command | Usage: /dbroadcast (message)
+
+  /dbroadcast:
+    permission: dcommands.broadcast
+    commands:
+    - '%broadcast &cDBroadcast &8» &f%0'
+
+# Here is an example /say command | Usage: /say (message)
+
+  /say:
+    permission: dcommands.say
+    commands:
+    - '%broadcast &c%name &8» &f%0'
+
+# Here is an example console command | Usage: /consolecommand (command)
+
+  /consolecommand:
+    permission: dcommands.consoletest
+    commands:
+    - '%console %0'
+    - '%broadcast &cDCommands &8» &fConsole is now running command %0'
+
+# Here is an example delayed command | Usage: /delay (command)
+
+  /delayedtest:
+    permission: dcommands.say
+    commands:
+    - '%delay-3 %0'

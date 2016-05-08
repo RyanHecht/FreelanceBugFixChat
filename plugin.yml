@@ -1,0 +1,16 @@
+name: DCommandsPRO
+
+main: me.matt.daxxieecommands.Main
+
+version: 1.0
+
+author: Daxxiee & DevOG
+description: An easy way to create commands with DCommandsPRO
+
+softdepend: [PermissionsEx, PlayerPoints]
+depend: [Vault]
+commands:
+
+  dcommands:
+    description: Shows help page
+    usage: "Usage: '/dcommands'"
